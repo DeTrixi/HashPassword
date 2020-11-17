@@ -43,8 +43,6 @@ namespace HashPassword
             // Creates a user wit password user ans saves it to the database
             sql.CreateUserAndPassword(user);
 
-            // TODO test password if is wil be the same again
-
 
             Users u = new Users();
             Console.Write("Enter a password To Verify Login: ");
