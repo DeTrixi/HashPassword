@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\flemm\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\flemm\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HashPassword.-661457128.00" t="ExcludeRecursive" />
-    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.2\docker" t="IncludeRecursive" />
-    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.2\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\flemm\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\flemm\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_HashPassword.-661457128.00" t="ExcludeRecursive" />
+    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.3\docker" t="IncludeRecursive" />
+    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\flemm\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
     <e p="C:\Users\flemm\RiderProjects\HashPassword" t="IncludeFlat">
       <e p="HashPassword" t="IncludeRecursive">
         <e p="appsettings.json" t="Include" />

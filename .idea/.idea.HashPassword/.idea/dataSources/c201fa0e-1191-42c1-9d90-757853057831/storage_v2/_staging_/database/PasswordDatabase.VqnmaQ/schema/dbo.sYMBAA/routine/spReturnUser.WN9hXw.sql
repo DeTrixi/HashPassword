@@ -1,6 +1,6 @@
 alter procedure dbo.spReturnUser(@Firstname nvarchar(200),
                                      @LastName nvarchar(100),
-                                     @Password nvarchar(max) output,
+                                     @Password nvarchar(max) output
                                      ) as
 
     BEGIN

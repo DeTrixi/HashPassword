@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using HashPassword.Models;
@@ -27,5 +28,17 @@ namespace HashPassword.Services
 
             return false;
         }
+
+        /// <summary>
+        /// verify if the password and the salt Is untampered
+        /// </summary>
+        /// <returns></returns>
+        public bool VerifyVerySecurePassword(string password, byte[] salt, int iterations, byte[] hashedPassword)
+        {
+            using var deriveBytes = new Rfc2898DeriveBytes(password, salt, iterations);
+
+            return deriveBytes.GetBytes(hashedPassword.Length).SequenceEqual(hashedPassword);
+        }
+
     }
 }

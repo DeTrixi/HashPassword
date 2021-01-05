@@ -57,6 +57,7 @@ namespace HashPassword.DataAccess
                 new System.Data.SqlClient.SqlConnection(connectionString))
             {
 
+
                 connection.Execute("dbo.spReturnUser", p, commandType: CommandType.StoredProcedure);
                 user.Password = p.Get<string>("@Password");
                 user.Salt = p.Get<string>("@Salt");

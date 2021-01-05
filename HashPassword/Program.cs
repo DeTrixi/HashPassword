@@ -32,8 +32,23 @@ namespace HashPassword
             user.Password = Console.ReadLine();
 
 
-            user.Salt = generatePasswordAndSalt.GenerateSalt();
-            user.Password = generatePasswordAndSalt.GeneratePassword(user.Password, user.Salt);
+
+            // user.Salt = generatePasswordAndSalt.GenerateSalt();
+            // user.Password = generatePasswordAndSalt.GeneratePassword(user.Password, user.Salt);
+
+            // This region is for the Rfc2898 it is all done in Ram
+            #region This is the code you are looking for
+
+            byte[] UserSalt = generatePasswordAndSalt.GenerateSaltArray();
+            byte[] passwordAndSalt = generatePasswordAndSalt.Rfc2898Hashing(user.Password, UserSalt, 50000);
+            Console.WriteLine($"password and salt:   {Convert.ToBase64String(passwordAndSalt)}");
+            Console.WriteLine("Type yoy password again to login");
+            string testPassword = Console.ReadLine();
+            Console.WriteLine(
+                verifyValidPassword.VerifyVerySecurePassword(testPassword, UserSalt, 50000, passwordAndSalt));
+            Console.ReadLine();
+
+            #endregion
 
 
 
